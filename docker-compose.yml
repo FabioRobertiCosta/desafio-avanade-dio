@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  vendas-db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssql_server
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    environment:
+      SA_PASSWORD: "SuaSenhaSegura!"
+      ACCEPT_EULA: "Y"
+
+  vendas-rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq_server
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  sqlserver_data:
+  rabbitmq_data:

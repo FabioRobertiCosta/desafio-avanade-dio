@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1QEaKJI2+n8EoE7VkbKZJfZaM0alQwZNlwkmKWXQNsc=",
+  "Source": "EstoqueService.Api",
+  "BasePath": "_content/EstoqueService.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
